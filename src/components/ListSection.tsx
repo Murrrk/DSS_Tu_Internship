@@ -1,6 +1,6 @@
 import React from 'react';
 import Task from '../interfaces';
-//import './ListSection.css';
+import '../styles/ListSection.css';
 
 interface ListSectionProps {
   tasks: Task[];

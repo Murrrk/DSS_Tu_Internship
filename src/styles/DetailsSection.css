@@ -1,0 +1,17 @@
+.content-details {
+  background-color: #eadbc3;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  padding-top: 15px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+}

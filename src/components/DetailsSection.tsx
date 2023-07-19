@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Task  from '../interfaces';
-//import './DetailsSection.css';
+import '../styles/DetailsSection.css';
 
 interface DetailsSectionProps {
     selectedTask: Task | null;
