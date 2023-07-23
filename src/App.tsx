@@ -7,7 +7,33 @@ import Task from './interfaces';
 import './App.css';
 
 const App: React.FC = () => {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useState<Task[]>([
+    {
+      id: 1,
+      description: 'Working',
+      assignee: 'John Doe',
+      status: 'In Progress',
+      priority: 10,
+      dueDate: new Date('2023-07-31'),
+    },
+    {
+      id: 2,
+      description: 'Lunch Break',
+      assignee: 'Jane Smith',
+      status: 'Completed',
+      priority: 4,
+      dueDate: new Date('2023-08-15'),
+    },
+    {
+      id: 3,
+      description: 'Study Java',
+      assignee: 'Bob Johnson',
+      status: 'To Do',
+      priority: 9,
+      dueDate: new Date('2023-07-25'),
+    },
+  ]);
+
   const [selectedTask, setSelectedTask] = useState<Task | null>(null);
 
   const handleTaskSave = (task: Task) => {
